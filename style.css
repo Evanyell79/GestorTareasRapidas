@@ -1,0 +1,400 @@
+/* Configuracion con CSS */
+
+#main-container {
+    /* Estilos para el contenedor principal */
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(#0dacd3, #066db1,);
+    background: #0dacd3;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+        
+}
+
+#Teorema{
+    /* Estilos para el link de Teorema */
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.contenedorhead{
+    /* Estilos para el contenedor de la imagen de notas */
+    width: 150px;
+    margin: auto;
+    display: flex;
+}
+
+.contenedorhead img {
+    /* Transición para la imagen al pasar el cursor */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave para la transformación */
+}
+
+.contenedorhead:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el cursor */
+}
+
+
+.Clase3 {
+    /* Estilos para la clase 3 */
+    margin-top: 20px;
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: white;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase3:hover {
+    background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+}
+
+.Clase4 {
+    /* Estilos para la clase 4 */
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase5 {
+    /* Estilos para la clase 5 */
+    padding: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: underline;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase5:hover {
+     background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+    
+}
+
+
+#taskPriority{
+    /* Estilos para el select de prioridad */
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#taskInput{
+    /* Estilos para el select de Entrada */
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#taskForm {
+    text-align: center;
+}
+
+#taskDate{
+    /* Estilos para el select de Fecha */
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+
+.BotonAgregar{
+    /* Estilos para el boton de Agregar */
+    padding: 5px 20px;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url(./Guardar.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 10px;
+    padding-right: 40px;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+}
+
+.BotonAgregar:hover{
+    background-color: #e5e7e9;
+}
+
+#tareasAgregadas{
+    /* Estilos para el contenedor de tareas agregadas */
+    align-items: center;
+}
+
+.Calendario {
+    /* Estilos para la clase Calendario */
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Calendario:hover {
+     background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+    
+}
+
+.Clase7 {
+    /* Estilos para la clase 7 */
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase8 {
+    /* Estilos para la clase 8 */
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #a3e4d7;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase8:hover {
+     background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+}
+
+.Boton {
+    /* Estilos para la clase Boton */
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 24px;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+    flex: 1;
+    
+}
+
+.Boton:hover{
+    background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+}
+
+.Clase9 {
+    /* Estilos para la clase 9 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 70vh;
+    max-width: 70vh
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-right: 10px;
+    min-height: 100px;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+}
+
+.Clase9:hover {
+     background: linear-gradient(#a3e4d7
+,#0dacd3); 
+    transform: scale(1);
+    -webkit-text-stroke: 1px #0dacd3;
+}
+
+.tarea{
+    /* Estilos para cada tarea */
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: arial, sans-serif;
+    transition: text-decoration-color 0.3s ease;
+}
+
+    
+.tarea input[type="checkbox"]:checked + strong {
+        text-decoration: line-through;
+        text-decoration-color: #fb160b;
+    
+}
+
+.tarea button{
+    /* Estilos para la clase tarea button */
+    background-color:#e5e7e9;
+    color: #0dacd3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.tarea button:hover{
+    background-color:#fb655e;
+    
+}
+
+.Cuadro {
+   
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(#0dacd3, #066db1);
+     
+}
+
+footer{
+    /* Estilos para el footer */
+    background: #0dacd3;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+        
+}
+
+.contact-us{
+    /* Estilos para la clase contactos */
+    width: 40%;
+    color: white;
+    -webkit-text-stroke: 1px #a3e4d7;    
+}
+
+.propietario{
+    font-weight: 500;
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.propietario+p{
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.propietario:hover {
+    transform: scale(1.1);
+    
+}
+
+.propietario+p:hover {
+    transform: scale(1.1);
+    
+}
+
+.imagen-aumentar {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-aumentar:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    /* Estilos para los íconos de redes sociales */
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    /* Estilos para la línea divisoria */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #0dacd3;
+    
+}
+
+
+

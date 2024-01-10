@@ -1,0 +1,140 @@
+<!-- App Creada por Evaristo Matos -->
+
+<!-- Configuracion de Codigo HTML -->
+
+<!-- Declaración del tipo de documento HTML -->
+<!DOCTYPE html>
+
+<!-- Etiqueta de apertura del documento HTML con idioma inglés -->
+<html lang="en">
+<head>
+    <!-- Configuración de codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuración para compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Título de la página -->
+    <title>GestorTareasRapidas</title>
+    <!-- Enlace al archivo de estilos style.css -->
+    <link  href="style.css" rel="stylesheet">
+    <!-- Enlace a boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Preconexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconexión a Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- Enlace a la fuente Open Sans -->  
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<!-- Cuerpo del documento con identificador main-container -->
+<body id="main-container">
+         
+    <div>
+    
+    <!-- Link para la pagina de Teorema -->
+    <h5><a href="https://aula.teorema.com.do/login/index.php" target="_black" id="Teorema">Teorema</a></h5>
+         
+     <div class="contenedorhead">
+        <!-- Imagen de notas con el atributo alt -->
+        <img src="NotasIco.svg" alt="Libretas"> 
+    </div>
+    
+    <div class="Clase3">
+        <!-- Título principal -->
+        <h1>App de Gestion de Tareas </h1>
+    </div> 
+
+    <div class="Clase5">
+    <!-- Título para tipos de tareas -->
+    <h3>Tipos de Tareas:</h3>
+        <!-- Formulario de tareas con identificador taskForm -->
+        <form id="taskForm">
+            <select id="taskPriority">
+                <option selected="selected">Crítico</option>
+                <option>Alto</option>
+                <option>Medio</option>
+                <option>Bajo</option>
+            </select>
+             <!-- Input para agregar tarea -->
+            <input type="text" id="taskInput" placeholder="Agregar La Tarea"> 
+        </form>
+    </div>  
+    <div class="Calendario">
+        <!-- Input de tipo fecha para la tarea -->
+        <input type="date" id="taskDate"/> 
+    </div>
+        
+    <div class="Clase8">
+        <div class="Boton">
+            <!-- Botón para agregar tarea -->
+            <button onClick="agregarTarea()", Class="BotonAgregar" >Agregar</button>
+        </div>
+    </div>
+    <!-- Contenedor para mostrar tareas -->
+    <div class="Clase9" id="tareasAgregadas">
+        <!-- Aquí se mostrarán las tareas agregadas -->
+    </div>
+    </div>
+    
+     <!-- Javascript para manejar las tareas, agregando, marcando como completas y eliminando -->
+     <script>
+      function agregarTarea() {
+      const priority = document.getElementById('taskPriority').value;
+      const task = document.getElementById('taskInput').value;
+      const date = document.getElementById('taskDate').value;
+
+      const tareaNueva = document.createElement('div');
+      tareaNueva.classList.add('tarea');
+      tareaNueva.innerHTML = `
+        <input type="checkbox" onclick="marcarCompleta(this)">
+        <strong>${priority}:</strong> ${task} - Fecha: ${date}
+        <button onclick="eliminarTarea(this.parentNode)">Eliminar</button>
+      `;
+
+      const contenedorTareas = document.getElementById('tareasAgregadas');
+      contenedorTareas.appendChild(tareaNueva);
+    }
+
+    function marcarCompleta(checkbox) {
+      if (checkbox.checked) {
+        checkbox.parentNode.style.textDecoration = 'line-through';
+      } else {
+        checkbox.parentNode.style.textDecoration = 'none';
+      }
+    }
+
+    function eliminarTarea(tarea) {
+      tarea.parentNode.removeChild(tarea);
+    }
+  </script>
+    
+    <!-- Pie de página con identificador contacto -->
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <img src="Evaristo.jpg" width="60" height="75" class="imagen-aumentar" />
+                <h2 class="propietario">Evaristo Matos
+                </h2>
+                <p>Diseño de Apps y Páginas Web</p>
+            </div>
+             <!-- Redes sociales -->
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" class="social-media-icon">
+                   <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </div>
+        </div>
+        <!-- Línea divisoria -->
+        <div class="line"></div>
+    </footer>
+    
+</body>
+    
+</html>
+
